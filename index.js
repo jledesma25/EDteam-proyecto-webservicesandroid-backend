@@ -91,7 +91,7 @@ const server = http.createServer((req, res) => {
             }
         });
 
-    } else if (req.method === 'DELETE' && pathname === '/developer') {
+    } /*else if (req.method === 'DELETE' && pathname === '/developer') {
         let body = '';
         req.on('data', chunk => {
             body += chunk.toString();
@@ -114,7 +114,22 @@ const server = http.createServer((req, res) => {
             } catch (error) {
                 sendResponse(res, 400, false, 'Invalid JSON data');
             }
-        });
+        });*/
+        else if (req.method === 'DELETE' && pathname.startsWith('/developer/')) {
+            const id = parseInt(pathname.split('/')[2], 10);
+            try {
+                let items = readData();
+                const index = items.findIndex(item => item.id === id);
+                if (index !== -1) {
+                    const deletedItem = items.splice(index, 1)[0]; // Eliminar y obtener el elemento eliminado
+                    writeData(items);
+                    sendResponse(res, 200, true, `Developer has been deleted successfully`);
+                } else {
+                    sendResponse(res, 404, false, 'Developer not found');
+                }
+            } catch (error) {
+                sendResponse(res, 500, false, 'Failed to delete developer');
+            }
 
     } else {
         sendResponse(res, 404, false, 'Not Found');

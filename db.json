@@ -1,65 +1,14 @@
 [
   {
-    "description": "Ingeniero de sistemas especializado en desarrollo Mobile",
-    "email": "jledesma2509@gmail.com",
-    "githubUrl": "jledesma",
     "id": 1,
     "lastName": "Ledesma",
     "names": "Juan José",
     "specialty": "MOBILE"
   },
   {
-    "id": 2,
     "names": "Diego",
-    "lastName": "Alarcon Pereira",
-    "description": "Ingeniero de sistemas especializado en desarrollo fronted",
-    "email": "dalarcon@gmail.com",
-    "specialty": "FRONTED",
-    "githubUrl": "https://github.com/dalarcon"
-  },
-  {
-    "id": 3,
-    "names": "Rogerio Alberto",
-    "lastName": "Canepa Monte",
-    "description": "Ingeniero de sistemas especializado en desarrollo backend",
-    "email": "rcanepa@gmail.com",
-    "specialty": "BACKEND",
-    "githubUrl": "https://github.com/rcanepa"
-  },
-  {
-    "description": "Ingeniero de sistemas",
-    "email": "jaime@gmail.com",
-    "githubUrl": "jostolaza",
-    "lastName": "Ostolaza",
-    "names": "Jaime",
-    "specialty": "FRONTED",
-    "id": 4
-  },
-  {
-    "description": "Proactivo",
-    "email": "mvaldez@gmail.com",
-    "githubUrl": "mvaldez",
-    "lastName": "Valdez",
-    "names": "Mauricio",
-    "specialty": "BACKEND",
-    "id": 5
-  },
-  {
-    "description": "Proactivo y puntual",
-    "email": "hpachas@gmail.com",
-    "githubUrl": "hpachas",
-    "lastName": "Pachas",
-    "names": "Hugo\t",
-    "specialty": "BACKEND",
-    "id": 6
-  },
-  {
-    "description": "aa",
-    "email": "aa@gmail.com",
-    "githubUrl": "aa",
-    "id": 7,
-    "lastName": "aa",
-    "names": "aa",
-    "specialty": "MOBILE"
+    "lastName": "Moscoso",
+    "specialty": "MOBILE",
+    "id": 2
   }
 ]
